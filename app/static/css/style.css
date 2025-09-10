@@ -1,0 +1,113 @@
+/* 全体の基本設定 */
+body {
+    font-family: "Segoe UI", "Hiragino Sans", "Noto Sans JP", sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* タイトル */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* 自己紹介文 */
+p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* リスト */
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+ul li {
+    background: #ecf0f1;
+    margin: 5px auto;
+    padding: 8px 15px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* リンク */
+a {
+    display: inline-block;
+    margin: 15px 0;
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+a:hover {
+    color: #1d6fa5;
+    text-decoration: underline;
+}
+
+/* プロフィール画像 */
+img {
+    display: block;
+    margin: 15px auto;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+/* テーブル */
+table {
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background: #3498db;
+    color: white;
+}
+td {
+    background: #fdfdfd;
+}
+
+/* フォーム */
+form {
+    width: 50%;
+    margin: 20px auto;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+form input[type="text"],
+form input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #3498db;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+form input[type="submit"]:hover {
+    background: #1d6fa5;
+}
