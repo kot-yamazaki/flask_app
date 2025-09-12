@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>企業名 | ホーム</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div class="logo">
+            <h1>企業名</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">ホーム</a></li>
+                <li><a href="{{ url_for('profile') }}">プロフィール</a></li>
+                <li><a href="#">サービス</a></li>
+                <li><a href="#">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- メインビジュアル -->
+    <section class="hero">
+        <h2>未来を創造する企業へ</h2>
+        <p>私たちはイノベーションで社会に貢献します。</p>
+    </section>
+
+    <!-- 会社紹介 -->
+    <section class="about">
+        <h2>会社概要</h2>
+        <p>
+            当社は〇〇事業を中心に、最新技術を活用して社会に新しい価値を提供しています。
+            信頼と挑戦を大切にし、常に成長を続けています。
+        </p>
+    </section>
+
+    <!-- サービス -->
+    <section class="services">
+        <h2>サービス</h2>
+        <ul>
+            <li>ソフトウェア開発</li>
+            <li>コンサルティング</li>
+            <li>サポート・運用</li>
+        </ul>
+    </section>
+
+    <!-- フッター -->
+    <footer>
+        <p>&copy; 2025 企業名. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
