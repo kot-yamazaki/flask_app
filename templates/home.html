@@ -1,26 +1,9 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <title>企業名 | ホーム</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-</head>
-<body>
-    <!-- ヘッダー -->
-    <header>
-        <div class="logo">
-            <h1>企業名</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="{{ url_for('home') }}">ホーム</a></li>
-                <li><a href="{{ url_for('profile') }}">プロフィール</a></li>
-                <li><a href="#">サービス</a></li>
-                <li><a href="#">お問い合わせ</a></li>
-            </ul>
-        </nav>
-    </header>
-
+{% extends "layout.html" %}
+{% block title %}ホーム{% endblock %}
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+{% endblock %}
+{% block content %}
     <!-- メインビジュアル -->
     <section class="hero">
         <h2>未来を創造する企業へ</h2>
@@ -45,10 +28,4 @@
             <li>サポート・運用</li>
         </ul>
     </section>
-
-    <!-- フッター -->
-    <footer>
-        <p>&copy; 2025 企業名. All Rights Reserved.</p>
-    </footer>
-</body>
-</html>
+{% endblock %}

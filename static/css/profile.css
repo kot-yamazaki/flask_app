@@ -1,113 +1,72 @@
-/* 全体の基本設定 */
-body {
-    font-family: "Segoe UI", "Hiragino Sans", "Noto Sans JP", sans-serif;
-    background: #f9f9f9;
-    color: #333;
-    margin: 0;
-    padding: 20px;
-    line-height: 1.6;
+/* ===== プロフィールページ専用スタイル ===== */
+
+.profile {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-/* タイトル */
-h1 {
+/* --- 見出し --- */
+.profile h2 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     color: #2c3e50;
-    margin-bottom: 10px;
-}
-
-/* 自己紹介文 */
-p {
-    text-align: center;
-    font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
-/* リスト */
-ul {
+.profile h3 {
+    font-size: 1.4rem;
+    color: #34495e;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* --- 年齢 --- */
+.profile p {
+    font-size: 1rem;
+    margin: 8px 0;
+    text-align: center;
+}
+
+/* --- 趣味リスト --- */
+.hobby-list {
     list-style: none;
     padding: 0;
-    text-align: center;
+    margin: 0 auto 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
 }
-ul li {
+
+.hobby-list li {
     background: #ecf0f1;
-    margin: 5px auto;
-    padding: 8px 15px;
-    border-radius: 10px;
-    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    transition: transform 0.2s;
 }
 
-/* リンク */
-a {
-    display: inline-block;
-    margin: 15px 0;
-    text-decoration: none;
-    color: #3498db;
-    font-weight: bold;
-}
-a:hover {
-    color: #1d6fa5;
-    text-decoration: underline;
+.hobby-list li:hover {
+    transform: translateY(-3px);
 }
 
-/* プロフィール画像 */
-img {
-    display: block;
-    margin: 15px auto;
-    border-radius: 50%;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-}
-
-/* テーブル */
-table {
-    width: 50%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    background: white;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
-}
-th, td {
-    border: 1px solid #ccc;
-    padding: 10px;
+/* --- 成人 / 未成年ステータス --- */
+.age-status {
     text-align: center;
-}
-th {
-    background: #3498db;
-    color: white;
-}
-td {
-    background: #fdfdfd;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
-/* フォーム */
-form {
-    width: 50%;
-    margin: 20px auto;
-    padding: 15px;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+.age-status .adult {
+    color: #27ae60;  /* 緑 → 成人 */
 }
-form input[type="text"],
-form input[type="number"] {
-    width: calc(100% - 20px);
-    padding: 8px;
-    margin: 5px 0 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-form input[type="submit"] {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background: #3498db;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-form input[type="submit"]:hover {
-    background: #1d6fa5;
+
+.age-status .minor {
+    color: #e74c3c;  /* 赤 → 未成年 */
 }

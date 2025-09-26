@@ -1,0 +1,77 @@
+/* ===== 全体の基本設定 ===== */
+body {
+    font-family: "Segoe UI", "Hiragino Sans", "Noto Sans JP", "Helvetica Neue", Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* ===== ヘッダー ===== */
+header {
+    background: #2c3e50; /* 濃いめの青グレー */
+    color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+/* ===== ナビゲーション ===== */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1rem;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    color: #1abc9c; /* アクセントカラー（エメラルド） */
+    border-bottom: 2px solid #1abc9c;
+}
+
+/* ===== メインコンテンツ ===== */
+main {
+    padding: 30px;
+    min-height: 70vh; /* フッターが画面下に配置されやすくする */
+}
+
+.flash-messages {
+    list-style: none;
+    padding: 1em;
+    margin: 1em 0;
+    border: 1px solid #4CAF50;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border-radius: 5px;
+}
+
+.flash-messages li {
+    margin-bottom: 0.5em;
+}
+
+
+/* ===== フッター ===== */
+footer {
+    background: #34495e; /* ヘッダーより少し明るい濃色 */
+    color: #ecf0f1;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+}

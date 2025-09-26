@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}My Web App{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/common.css') }}">
+    {% block styles %}{% endblock %}
+</head>
+<body>
+    <header>
+        <h1>共通ヘッダー</h1>
+        <nav>
+            <a href="/">ホーム</a> |
+            <a href="/mypage">マイページ</a> |
+            <a href="/profile/kotomi">ことみさんのプロフィール</a> |
+            <a href="/contact">お問い合わせ</a>
+        </nav>
+    </header>
+
+    <!-- 🔽 フラッシュメッセージ表示エリアを追加 -->
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class="flash-messages">
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+    
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>© 2025 My Web App</p>
+    </footer>
+</body>
+</html>
