@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}画像ギャラリー{% endblock %}
+
+{% block styles %}
+{% endblock %}
+
+{% block content %}
+
+<h1>画像ギャラリー</h1>
+{% for img in images %}
+    <img src="{{ url_for('static', filename='uploads/' + img) }}" width="200">
+{% endfor %}
+
+{% endblock %}

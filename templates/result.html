@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}入力結果画面{% endblock %}
+
+{% block styles %}
+{% endblock %}
+
+{% block content %}
+
+    {% if error %}
+        <p style="color:red;">{{ error }}</p>
+    {% else %}
+        <p>こんにちは、{{ name }}さん！年齢は{{ age }}歳ですね。血液型は{{ blood_type }}型ですね。</p>
+    {% endif %}
+
+{% endblock %}

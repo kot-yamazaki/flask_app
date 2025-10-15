@@ -21,6 +21,24 @@
     margin: 0 auto;
 }
 
+
+/* フッター */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer img {
+    margin-top: 10px;
+    width: 100px;
+    border-radius: 5px;
+}
+
 /* --- 会社概要 --- */
 .about {
     background: #fff;

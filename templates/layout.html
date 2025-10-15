@@ -3,6 +3,7 @@
 <head>
     <title>{% block title %}My Web App{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/common.css') }}">
+   
     {% block styles %}{% endblock %}
 </head>
 <body>
@@ -12,7 +13,9 @@
             <a href="/">ホーム</a> |
             <a href="/mypage">マイページ</a> |
             <a href="/profile/kotomi">ことみさんのプロフィール</a> |
-            <a href="/contact">お問い合わせ</a>
+            <a href="/contact">お問い合わせ</a> |
+            <a href="/upload">画像アップロード</a> |
+            <a href="/gallery">画像ギャラリー</a> 
         </nav>
     </header>
 
@@ -26,13 +29,15 @@
             </ul>
         {% endif %}
     {% endwith %}
-    
+
     <main>
         {% block content %}{% endblock %}
     </main>
 
     <footer>
+        <img src="{{ url_for('static', filename='pictur/orotinyu.jpg') }}" width="200">
         <p>© 2025 My Web App</p>
     </footer>
 </body>
 </html>
+

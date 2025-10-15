@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}入力フォーム画面{% endblock %}
+
+{% block styles %}
+{% endblock %}
+
+{% block content %}
+<form action="/submit" method="POST">
+    名前: <input type="text" name="ccc"><br>
+    年齢: <input type="number" name="ddd"><br>
+    血液型: <input type="text" name="eee"><br>
+    <input type="submit" value="送信">
+</form>
+
+<form action="/search" method="GET">
+    キーワード: <input type="text" name="q">
+    <input type="submit" value="検索">
+</form>
+
+{% endblock %}
