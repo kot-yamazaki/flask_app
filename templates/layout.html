@@ -9,6 +9,7 @@
 <body>
     <header>
         <h1>共通ヘッダー</h1>
+        <img src="{{ url_for('static', filename='header_images/seaside_dog.jpg') }}" width="100">
         <nav>
             <a href="/">ホーム</a> |
             <a href="/mypage">マイページ</a> |
@@ -35,7 +36,7 @@
     </main>
 
     <footer>
-        <img src="{{ url_for('static', filename='pictur/orotinyu.jpg') }}" width="200">
+        <img src="{{ url_for('static', filename='footer_images/orotinyu.jpg') }}" width="200">
         <p>© 2025 My Web App</p>
     </footer>
 </body>
